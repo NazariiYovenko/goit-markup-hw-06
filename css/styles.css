@@ -816,6 +816,10 @@ img {
   transition: background-color var(--main-transition), border var(--main-transition);
 }
 
+.input-check:focus + .check-text {
+  outline: 2px solid var(--accent);
+}
+
 .check-icon {
   fill: transparent;
   transition: fill var(--main-transition);
