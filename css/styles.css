@@ -761,7 +761,6 @@ img {
 
 .input-wrap {
   position: relative;
-  margin-top: 4px;
 }
 
 .input-icon {
@@ -778,7 +777,6 @@ img {
 }
 
 .input-textarea {
-  margin-top: 4px;
   padding: 12px 16px;
   height: 120px;
   resize: none;
@@ -802,9 +800,10 @@ img {
   color: var(--primary-text-color);
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 
-.check-text span {
+.check-text > span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -816,8 +815,8 @@ img {
   transition: background-color var(--main-transition), border var(--main-transition);
 }
 
-.input-check:focus + .check-text {
-  outline: 2px solid var(--accent);
+.input-check:focus + .check-text span {
+  border: 2px solid var(--accent);
 }
 
 .check-icon {
